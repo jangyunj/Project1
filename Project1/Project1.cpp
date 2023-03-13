@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cmath>
 #include <cstdlib>
+#include <ctime>
 
 using namespace std;
 
@@ -16,10 +17,19 @@ using namespace std;
 //	
 //}
 
+//int main() {
+//	int number = 1'000'000;
+//	short another = number; //narrowing conversion - changes a value to a data type that may not be able to hold some of the possible values
+//	cout << another;
+//
+//}
+//
+
+//--------Random number from 0 to 10-----------
 int main() {
-	int number = 1'000'000;
-	short another = number; //narrowing conversion - changes a value to a data type that may not be able to hold some of the possible values
-	cout << another;
-
+	srand(time(0)); //initialize random number generator
+	for (int i = 0; i < 10; i++) {
+		cout << (rand() % 10) + 1 << endl;
+		//cout << (rand() % 10) + 1 << " "; <--If you want the results on the same line
+	}
 }
-
