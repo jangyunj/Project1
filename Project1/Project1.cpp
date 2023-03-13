@@ -1,8 +1,6 @@
-// Project1.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
 #include <iostream>
 #include <cmath>
+#include <cstdlib>
 
 using namespace std;
 
@@ -11,9 +9,17 @@ using namespace std;
 //	cout << number;
 //}
 
+//int main() {
+//	int number = 0b11111111; //binary = 255
+//	int number = 0xff; //hexadecimal = 255
+//	cout << number;
+//	
+//}
+
 int main() {
-	int number = 0b11111111; //binary = 255
-	int number = 0xff; //hexadecimal = 255
-	cout << number;
+	int number = 1'000'000;
+	short another = number; //narrowing conversion - changes a value to a data type that may not be able to hold some of the possible values
+	cout << another;
 
 }
+

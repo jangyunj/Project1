@@ -1,2 +1,3 @@
 ﻿  Project1.cpp
-  Project1.vcxproj -> C:\Users\hwait\Desktop\C++\Project1\x64\Debug\Project1.exe
+C:\Users\hwait\Desktop\C++\Project1\Project1\Project1.cpp(26,5): error C2084: function 'int main(void)' already has a body
+C:\Users\hwait\Desktop\C++\Project1\Project1\Project1.cpp(19,5): message : see previous definition of 'main'
